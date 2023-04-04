@@ -1,18 +1,25 @@
+import { Container, Navbar, Nav} from 'react-bootstrap';
 import './AppHeader.css';
+import {Outlet, Link} from 'react-router-dom'
 
 function AppHeader() {
     return(
-        <header className="app-header">
+      <>
+        <Navbar className="app-header">
+          <Container>
           <div>
-          <a href="#" className="mainTextHeader">Raidho Slowbar</a>
-          <a href="#" className="textHeader">Product</a>
-          <a href="#" className="textHeader">Coffee Beans</a>
-          <a href="#" className="textHeader">About Us</a>
+            <Nav.Link as={Link} to={"/"} className='mainTextHeader'>Raidho Slowbar</Nav.Link>
+            <Nav.Link as={Link} to={"/product"} className='textHeader'>Product</Nav.Link>
+            <Nav.Link className='textHeader'>Coffee Beans</Nav.Link>
+            <Nav.Link className='textHeader'>About Us</Nav.Link>
           </div>
           <div>
-          <a href="#" className="textHeader">Log-in</a>
+            <Nav.Link as={Link} to={"/login"} className='textHeader'>Log-in</Nav.Link>
           </div>
-        </header>
+          </Container>
+        </Navbar>
+        <Outlet></Outlet>
+      </>
     );
 }
 

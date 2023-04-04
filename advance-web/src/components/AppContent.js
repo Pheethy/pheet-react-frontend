@@ -1,6 +1,6 @@
 import "./AppContent.css";
 import axios from "axios";
-const url = "http://localhost:8080/product/list";
+const url = "http://127.0.0.1:8080/product/list";
 const jwtToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzgzMTU5MzR9.L_mJBlEvB7DfaII9MYxdjLbas8IaE8Q0ng6YBMNRPuE';
 
 // Store the JWT token in the local storage
@@ -13,8 +13,8 @@ const headers = {
 };
 
 function AppContent() {
-  const handleClick = () => {
-    axios
+  const handleClick = async() => {
+   await axios
       .get(url, {headers})
       .then((response) => {
         console.log(response.data);
