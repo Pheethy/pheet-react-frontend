@@ -1,7 +1,7 @@
 /* Header--Start */
 .app-header {
     font-family: 'Roboto Slab', serif;
-    background-color: skyblue;
+    background-color: #000000;
     padding: 15px;
     margin: auto;
     display: flex;
@@ -10,19 +10,28 @@
   }
   
   .mainTextHeader {
-    color: black;
+    color: #fff;
     padding: 10px;
     font-size: 20px;
-    font-weight: 450;
+    font-weight: 700;
     text-decoration: none;
     display: inline-block;
     border: none;
   }
+
+  .mainTextHeader:hover {
+    color: #bb86fc;
+  }
   
   .textHeader {
-    color: black;
+    color: #fff;
     padding: 10px;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 300;
     display: inline-block;
+  }
+
+  .textHeader:hover {
+    color: #bb86fc;
   }

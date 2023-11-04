@@ -8,7 +8,7 @@ function AppHeader() {
         <Navbar className="app-header">
           <Container>
           <div>
-            <Nav.Link as={Link} to={"/"} className='mainTextHeader'>Raidho Slowbar</Nav.Link>
+            <Nav.Link as={Link} to={"/"} className='mainTextHeader'>FlavorParser</Nav.Link>
             <Nav.Link as={Link} to={"/product"} className='textHeader'>Product</Nav.Link>
             <Nav.Link className='textHeader'>Coffee Beans</Nav.Link>
             <Nav.Link className='textHeader'>About Us</Nav.Link>
